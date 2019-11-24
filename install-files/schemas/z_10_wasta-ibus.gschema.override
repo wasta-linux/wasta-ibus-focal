@@ -1,0 +1,22 @@
+# ==============================================================================
+# z_10_wasta-ibus.gschema.override
+#
+#   If same key overridden in 2 files, "last wins" regarding filenames
+#       (so a "z_10_*" filename would win over a "10_*" filename)
+#       wasta-core uses "z_10_*" filenames, regional customizations
+#       use "z_20_*" filenames.
+#
+#   After modifying these .override files, reload with:
+#       glib-compile-schemas /usr/share/glib-2.0/schemas/
+#
+#   2017-11-29 rik: initial bionic settings
+#
+# ==============================================================================
+
+[org.freedesktop.ibus.general]
+use-system-keyboard-layout = false
+
+[org.freedesktop.ibus.panel]
+custom-font = 'Ubuntu 11'
+xkb-icon-rgba = '#FFFFFF'
+use-custom-font = true
