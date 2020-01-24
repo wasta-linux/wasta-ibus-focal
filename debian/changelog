@@ -1,3 +1,10 @@
+wasta-ibus-focal (0.1.2) focal; urgency=medium
+
+  * postinst: stopping / restarting ibus if previously active
+    to ensure changing settings won't corrupt ibus
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Fri, 24 Jan 2020 12:57:39 +0300
+
 wasta-ibus-focal (0.1.1) focal; urgency=medium
 
   * initial release
